@@ -29,4 +29,4 @@ User.findOne({email: 'germancutraro@hotmail.com'}).then(user => {
   user.save(); 
 });
 
-User.create({name: 'Nick', email: 'nick@gmail.com', posts: [{title: 'Apples', content: 'Apples are...'}]})
+User.create({name: 'Nick', email: 'nick@gmail.com', posts: [{title: 'Apples', content: 'Apples are...'}]});
