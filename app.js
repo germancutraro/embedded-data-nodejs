@@ -21,12 +21,12 @@ let userSchema = new Schema({
 });
 const User = mongoose.model('User', userSchema);
 
-// User.create({name: 'Germán', email: 'germancutraro@hotmail.com'});
-// Post.create({title: 'Arrow Functions in Js Es6', content: 'Arrow functions are great...'});
+User.create({name: 'Germán', email: 'germancutraro@hotmail.com'});
+Post.create({title: 'Arrow Functions in Js Es6', content: 'Arrow functions are great...'});
 
-// User.findOne({email: 'germancutraro@hotmail.com'}).then(user => {
-//   user.posts.push({title: 'Template Strings', content: 'I love the new feature...'});
-//   user.save();
-// });
+User.findOne({email: 'germancutraro@hotmail.com'}).then(user => {
+  user.posts.push({title: 'Template Strings', content: 'I love the new feature...'});
+  user.save(); 
+});
 
 User.create({name: 'Nick', email: 'nick@gmail.com', posts: [{title: 'Apples', content: 'Apples are...'}]})
